@@ -38,10 +38,9 @@ fetch('http://localhost:3000/flowers')
             likeCounter.textContent = count
               console.log("count",count);
            
-              })               
-            
+              })            
+        
 
-    
 
             const cardContentDiv = document.createElement('div');
             cardContentDiv.classList.add('card-content')
@@ -63,18 +62,34 @@ fetch('http://localhost:3000/flowers')
     });
 
 
+    
+//search functionality
 
+const answer =query.addEventListener('input',search);
+function search() {
+    console.log("hhhjhj")
+    const url = ('http://localhost:3000/flowers')
+    fetch(url, {
 
+    })
+        .then(response => response.json())
+        .then(result => {
+            const query=document.getElementById("search-bar");
+            const queryResults= document.getElementById("flowers-container");
+            const searchResults =result.filter(item => item.name).includes(query);        
+            if (searchResults.length != 0) {
+                // queryResults.innerHTML(searchResults);
+                console.log("searchResults" , searchResults),
 
-
-
-
-
-
-
-
-
-
-
-
+                queryResults.style.display ="none"
+            }
+             else {
+                queryResults.innerHTML("No results found!");
+            }        
+                      
+        })
+        
+        Event.preventDefault(),
+        console.log("answer",answer)
+}
 
