@@ -3,76 +3,91 @@
       {
         "id": "1",       
         "name":"Roses",
-        "price":"KES 4000",
+        "price":"4000",
         "description": "Bunch of Flowers in a Metal Bucket",
-        "image": "https://www.pexels.com/photo/bunch-of-flowers-in-a-metal-bucket-4612235/"
+        "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": "2",       
         "name":"Red Roses",
-        "price":"KES 2500",
+        "price":"2500",
         "description": "Red Rose Flowers In Close-up View",
-        "image": "https://www.pexels.com/photo/red-rose-flowers-in-close-up-view-3381533/"
+        "image": "https://images.pexels.com/photos/3381533/pexels-photo-3381533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id": "3",       
         "name":"Sunflowers",
-        "price":"KES 3500",
+        "price":"3500",
         "description": "Yellow Sunflowers In Clear Glass Vase",        
-        "image": "https://www.pexels.com/photo/yellow-sunflowers-in-clear-glass-vase-1427855/"
+        "image": "https://images.pexels.com/photos/1427855/pexels-photo-1427855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "id":"4",
         "name":"Immortelle flower",
-        "price":"KES 3500",
+        "price":"3500",
         "description":"A Bouquet of Immortelle Flowers in a Glass Vase",
-        "image":"https://www.pexels.com/photo/a-bouquet-of-immortelle-flowers-in-a-glass-vase-15303798/"
+        "image":"https://images.pexels.com/photos/15303798/pexels-photo-15303798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 
       },
       {
         "id": "5",       
         "name":"Twigs",
-        "price":"KES 2000",
+        "price":"2000",
         "description": "Unrecognizable gardener arranging twigs in vase",   
-        "image": "https://www.pexels.com/photo/unrecognizable-gardener-arranging-twigs-in-vase-6913826/"
-      },
+        "image": "https://images.pexels.com/photos/15303798/pexels-photo-15303798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
       {
       "id": "6",       
       "name":"Baby Breath",
-      "price":"KES 1500",
+      "price":"1500",
       "description": "Baby breath to spice up your bouquets",   
-      "image": "https://www.pexels.com/photo/person-holding-white-flowers-in-black-background-3746197/"
+      "image": "https://www.wholesaleweddingsuperstore.com.au/assets/alt_2/C20067.jpg?20210318031430"
     },
     {
         "id": "7",       
         "name":"Chrysanthemum flower",
-        "price":"KES 2500",
+        "price":"2500",
         "description":"Bunch of yellow flowers in sunlight",
-        "image": "https://www.pexels.com/photo/bunch-of-yellow-flowers-in-sunlight-5987200/"
+        "image": "https://images.pexels.com/photos/5987200/pexels-photo-5987200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
 
         "id": "8",       
         "name":"Floribunda flower",
-        "price":"KES 6500",
+        "price":"6500",
         "description":"Elegant bouquet of floribunda flowers on floor",        
         "image": "https://www.pexels.com/photo/elegant-bouquet-of-floribunda-flowers-on-floor-2879824/"
       },
       {
 
         "id": "9",       
-        "name":"Assorted flower",
-        "price":"KES 2500",
+        "name":"Assorted Emz",
+        "price":"4000",
         "description":"White ceramic vase with fresh flowers",        
-        "image": "https://www.pexels.com/photo/white-ceramic-vase-with-fresh-flowers-4022220/"
+        "image": "https://images.pexels.com/photos/2879824/pexels-photo-2879824.jpeg"
       },
       {
         "id": "10",       
         "name":"Orange tulips",
-        "price":"KES 8000",
+        "price":"8000",
         "description":"Orange flowers in Gray Plant Pot",    
-        "image": "https://www.pexels.com/photo/orange-tulips-in-gray-plant-pot-931154/"
-      }   
-        
+        "image": "https://images.pexels.com/photos/931154/pexels-photo-931154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+      "id": "11",       
+      "name":"Wild Flowers",
+      "price":"8500",
+      "description":"Wild flowers bouqets for weddings",    
+      "image":"https://www.espoma.com/wp-content/uploads/2021/08/niklas-ohlrogge-74QmIJDTD-c-unsplash-705x529.jpg"
+      },  
+      {
+      "id": "12",       
+      "name":"White Roses",
+      "price":"10000",
+      "description":"luxury flowers ",  
+      "image":""
+      }
+
+          
     ]
 }
