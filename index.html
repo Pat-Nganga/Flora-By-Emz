@@ -3,32 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <title>Flower List</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  
+
   <body>
     <div class="menu">
-        <h1>FLORA BY EMZ</h1>
-        
-        <form>
-            <!-- <label for="search">Search:</label> -->
-            <input type="text" id="search" name="search" placeholder="search flowers">
-            <button type="submit">Search</button>
-          </form>
+      <h1>FLORA BY EMZ</h1>
+      <!-- <nav>
+            <ul class="navigation">
+              <li id="link-about" class="nav-link"><a href="#About">About</a></li>
+              <li class="nav-link"><a href="#Skills">Skills</a></li>
+              <li class="nav-link"><a href="#Projects">Projects</a></li>
+              <li class="nav-link"><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+         -->
     </div>
+
+    <form>
+      <label for="search">Search:</label>
+      <input
+        type="text"
+        id="search-bar"
+        name="search"
+        placeholder="search flowers..."
+      />
+      <button type="submit">Search</button>
+    </form>
     <div class="grid-container">
         <div id="flower-list"></div>
         <div id="flower-details">,
           <div id="flowers-container"></div>
+        
+            <div>hello 1</div>
         </div>
+        
+        <div>hello 2</div>
+     
+       
       </div>
+    </div>
     <footer>
-        <form>
-            <textarea name="" id="" cols="30" rows="10" placeholder="leave a comment"></textarea>
-            <button type="submit">submit</button>
-          </form>
-        </footer>
+      
+      <form>
+        <textarea
+          name=""
+          id=""
+          cols="60"
+          rows="5"
+          placeholder="leave a comment"
+        ></textarea>
+        <button type="submit">submit</button>
+      </form>
+    </footer>
+    
     <script src="index.js"></script>
   </body>
-
 </html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Flower Shop</h1>
+    <form id="search-form">
+      <label for="search-input">Search Bouquets:</label>
+      <input type="text" id="search-input">
+      <button type="submit">Search</button>
+    </form>
+    <div id="flowers-container"></div>
+    <form id="comment-form">
+      <label for="comment-input">Leave a comment:</label>
+      <input type="text" id="comment-input">
+      <button type="submit">Submit</button>
+    </form>
+    <div id="comments-container"></div>
+    <script src="index.js"></script>
+  </body>
+  <script> -->
