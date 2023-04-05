@@ -1,93 +1,192 @@
 {
-    "flowers": [
-      {
-        "id": "1",       
-        "name":"Assorted flowers",
-        "price":"4000",
-        "description": "Bunch of Flowers in a Metal Bucket",
-        "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "2",       
-        "name":"Red Roses",
-        "price":"2500",
-        "description": "Red Rose Flowers In Close-up View",
-        "image": "https://images.pexels.com/photos/3381533/pexels-photo-3381533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "3",       
-        "name":"Sunflowers",
-        "price":"3500",
-        "description": "Yellow Sunflowers In Clear Glass Vase",        
-        "image": "https://images.pexels.com/photos/1427855/pexels-photo-1427855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id":"4",
-        "name":"Immortelle flower",
-        "price":"3500",
-        "description":"A Bouquet of Immortelle Flowers in a Glass Vase",
-        "image":"https://images.pexels.com/photos/15303798/pexels-photo-15303798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-
-      },
-      {
-        "id": "5",       
-        "name":"Carnations",
-        "price":"2000",
-        "description": "Pink bouquet carnations in vase",   
-        "image": "https://images.pexels.com/photos/6198978/pexels-photo-6198978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-      {
-      "id": "6",       
-      "name":"Baby Breath",
-      "price":"1500",
-      "description": "Baby breath to spice up your bouquets",   
-      "image": "https://www.wholesaleweddingsuperstore.com.au/assets/alt_2/C20067.jpg?20210318031430"
+  "flowers": [
+    {
+      "id": "1",
+      "name": "Assorted flowers",
+      "price": "4000",
+      "description": "Bunch of Flowers in a Metal Bucket",
+      "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
     },
     {
-        "id": "7",       
-        "name":"Chrysanthemums",
-        "price":"2500",
-        "description":"Bunch of yellow flowers in sunlight",
-        "image": "https://images.pexels.com/photos/5987200/pexels-photo-5987200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-
-        "id": "8",       
-        "name":"Floribunda",
-        "price":"6500",
-        "description":"Elegant bouquet of floribunda flowers on floor",        
-        "image": "https://images.pexels.com/photos/2879824/pexels-photo-2879824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "id": "13",       
-      "name":"Lupinus polyphyllus ",
-      "price":"9000",
-      "description":"Fresh Lupinus polyphyllus bouquet in vase",  
-      "image":"https://images.pexels.com/photos/4702141/pexels-photo-4702141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1  "
-      },
-      {
-        "id": "10",       
-        "name":"Orange tulips",
-        "price":"8000",
-        "description":"Orange flowers in Gray Plant Pot",    
-        "image": "https://images.pexels.com/photos/931154/pexels-photo-931154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-      "id": "11",       
-      "name":"Wild Flowers",
-      "price":"8500",
-      "description":"Wild flowers bouqets for weddings",    
-      "image":"https://www.espoma.com/wp-content/uploads/2021/08/niklas-ohlrogge-74QmIJDTD-c-unsplash-705x529.jpg"
-      },  
-      {
-      "id": "12",       
-      "name":"White Roses",
-      "price":"10000",
-      "description":"luxury flowers ",  
-      "image":"https://images.pexels.com/photos/6913841/pexels-photo-6913841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      }
-      
-
-          
-    ]
+      "id": "2",
+      "name": "Red Roses",
+      "price": "2500",
+      "description": "Red Rose Flowers In Close-up View",
+      "image": "https://images.pexels.com/photos/3381533/pexels-photo-3381533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "3",
+      "name": "Sunflowers",
+      "price": "3500",
+      "description": "Yellow Sunflowers In Clear Glass Vase",
+      "image": "https://images.pexels.com/photos/1427855/pexels-photo-1427855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "4",
+      "name": "Immortelle flower",
+      "price": "3500",
+      "description": "A Bouquet of Immortelle Flowers in a Glass Vase",
+      "image": "https://images.pexels.com/photos/15303798/pexels-photo-15303798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "5",
+      "name": "Carnations",
+      "price": "2000",
+      "description": "Pink bouquet carnations in vase",
+      "image": "https://images.pexels.com/photos/6198978/pexels-photo-6198978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "6",
+      "name": "Baby Breath",
+      "price": "1500",
+      "description": "Baby breath to spice up your bouquets",
+      "image": "https://www.wholesaleweddingsuperstore.com.au/assets/alt_2/C20067.jpg?20210318031430",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "7",
+      "name": "Chrysanthemums",
+      "price": "2500",
+      "description": "Bunch of yellow flowers in sunlight",
+      "image": "https://images.pexels.com/photos/5987200/pexels-photo-5987200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "8",
+      "name": "Floribunda",
+      "price": "6500",
+      "description": "Elegant bouquet of floribunda flowers on floor",
+      "image": "https://images.pexels.com/photos/2879824/pexels-photo-2879824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "13",
+      "name": "Lupinus polyphyllus ",
+      "price": "9000",
+      "description": "Fresh Lupinus polyphyllus bouquet in vase",
+      "image": "https://images.pexels.com/photos/4702141/pexels-photo-4702141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "10",
+      "name": "Orange tulips",
+      "price": "8000",
+      "description": "Orange flowers in Gray Plant Pot",
+      "image": "https://images.pexels.com/photos/931154/pexels-photo-931154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "11",
+      "name": "Wild Flowers",
+      "price": "8500",
+      "description": "Wild flowers bouqets for weddings",
+      "image": "https://www.espoma.com/wp-content/uploads/2021/08/niklas-ohlrogge-74QmIJDTD-c-unsplash-705x529.jpg",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "12",
+      "name": "White Roses",
+      "price": "10000",
+      "description": "luxury flowers ",
+      "image": "https://images.pexels.com/photos/6913841/pexels-photo-6913841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "mr--DU6"
+    },
+    {
+      "id": "1V5tCwj"
+    },
+    {
+      "id": "qscZrqq"
+    },
+    {
+      "id": "czR0ntm"
+    },
+    {
+      "name": "lillies",
+      "price": 5000,
+      "image": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRD4Sn-NyrhPeZlsTsShOXSn_ogZLPDDY2_ZFTflFFvrde05ykVND1e-Zupc2qJN04QgLvM9RLyz_BAr6M",
+      "id": "Rm6AtNp"
+    }
+  ],
+  "newFlower": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "name": "lillies",
+      "price": 5000,
+      "image": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRD4Sn-NyrhPeZlsTsShOXSn_ogZLPDDY2_ZFTflFFvrde05ykVND1e-Zupc2qJN04QgLvM9RLyz_BAr6M",
+      "id": 17
+    },
+    {
+      "name": "lillies",
+      "price": 5000,
+      "image": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRD4Sn-NyrhPeZlsTsShOXSn_ogZLPDDY2_ZFTflFFvrde05ykVND1e-Zupc2qJN04QgLvM9RLyz_BAr6M",
+      "id": 18
+    }
+  ]
 }

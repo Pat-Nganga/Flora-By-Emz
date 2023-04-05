@@ -29,24 +29,39 @@
 
     </div>
 
-    <!-- <form>
-      <label for="search"></label>
-      <input
-        type="text"
-        id="search-bar" name="search" placeholder="search flowers..."/>
-      <button id ="search-button" type="submit">Search</button>
-    </form> -->
+   
     <div class="grid-container">
         <div id="flower-list"></div>
         <div id="flower-details">
-            <div id="flowers-container"></div>
-            <button id="like-button"><span class="heart-icon"></span></button>
+            <div id="flowers-container"></div>            
+            <button id="delete-button"><span class=delete></span></button>
+
             <div id="results"></div>
 
+        </div>
+        <div>
+            <form id="flower-form">
+                <label for="name">Name:</label>
+                <input type="text"id="flower-name" name="flower-name">
+                <br>
+                <label for="price">price:</label>
+                <input type="text"id="price" name="price"> 
+
+                <label for="image">image:</label>
+                <input type="url"id="image" name="image"> 
+
+
+                <button type="submit">Create New Flower Post</button> 
+                
+                
+            
+            </form>
         </div>
 
 
         <footer>
+            
+          
 
             <!-- <form>
         <textarea name=""id=""cols="60"rows="5"placeholder="leave a comment"></textarea>

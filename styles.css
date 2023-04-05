@@ -51,8 +51,6 @@ h1 {
     font-size:x-large;
     background-color:rgb(82, 89, 95);
    
-
-
   }
   
 
@@ -86,7 +84,7 @@ h1 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 100%;
   grid-gap: 5px;
   background-color: white;
 }
@@ -97,13 +95,11 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* .card {
-  width: 400px;
-  height: 600px;
-  box-shadow: 2px 2px 20px black;
-  border-radius: 5px;
-  margin: 2%;
-} */
+.card {
+
+  
+  border-radius: 10px;
+}
 .card {
     border: 1px solid #cccccc;
     padding: 10px;
