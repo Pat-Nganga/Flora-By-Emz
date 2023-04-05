@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Flower List</title>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>FLORA BY EMZ</h1>
     <div class="menu">
-        
-      
+
         <nav>
-            
+
             <ul class="navigation">
-              <li id="link-home" class="nav-link"><a href="#Home">Home</a></li>
-              <li class="nav-link"><a href="#Subscribe">Subscribe</a></li>
-              <li class="nav-link"><a href="#Shop">Shop</a></li>
-              <li class="nav-link"><a href="#Contact">Contact</a></li>
+                <li id="link-home" class="nav-link"><a href="#Home">Home</a></li>
+                <li class="nav-link"><a href="#Subscribe">Subscribe</a></li>
+                <li class="nav-link"><a href="#Shop">Shop</a></li>
+                <li class="nav-link"><a href="#Contact">Contact</a></li>
             </ul>
-            
-          </nav>
-     
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search-bar" name="search"
+                    placeholder="            .....search flowers...     " />
+                <button id="search-button" type="submit">Search</button>
+            </form>
+        </nav>
+
     </div>
 
-    <form>
+    <!-- <form>
       <label for="search"></label>
       <input
         type="text"
         id="search-bar" name="search" placeholder="search flowers..."/>
       <button id ="search-button" type="submit">Search</button>
-    </form>
+    </form> -->
     <div class="grid-container">
-        <div id="flower-list"></div>        
+        <div id="flower-list"></div>
         <div id="flower-details">
-          <div id="flowers-container"></div>    
-          <button id="like-button"><span class="heart-icon"></span></button>
-          <div id = "results"></div>  
-            
-        </div>  
-         
-     
+            <div id="flowers-container"></div>
+            <button id="like-button"><span class="heart-icon"></span></button>
+            <div id="results"></div>
+
+        </div>
+
+
         <footer>
-      
-      <!-- <form>
+
+            <!-- <form>
         <textarea name=""id=""cols="60"rows="5"placeholder="leave a comment"></textarea>
         <button type="submit">submit</button>
       </form> -->
-    </footer>
-    
-    <script src="index.js"></script>
-  </body>
-</html>
+        </footer>
+    </div>
+    <div id='admin-buttons-container'></div>
 
+    <script src="index.js"></script>
+</body>
+
+</html>

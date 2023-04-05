@@ -201,14 +201,21 @@ function createCard(flower) {
 
   //add a like button
   const likeButton = document.createElement('button');
-  likeButton.textContent = 'like';
+  let count = 0
+  likeButton.textContent = `Like (${count})`
+//   likeButton.textContent ='Like';
   likeButton.id = `like-button-${flower.id}`;
-  let count = 0;
   const likeCounter = document.createElement('h2');
   likeButton.addEventListener('click', () => {
     count++;
-    likeCounter.textContent = count;
-  });
+    // likeCounter.textContent = count;
+    likeButton.textContent = `Like (${count})`
+    
+
+});
+
+
+  
 
   const cardContentDiv = document.createElement('div');
   cardContentDiv.classList.add('card-content');
@@ -226,3 +233,6 @@ function createCard(flower) {
 
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', search);
+
+
+
