@@ -65,7 +65,23 @@ function createCard(flower) {
     count++;
     likeButton.textContent = `Like (${count})`;
   });
-// delete button
+
+  //add a delete button
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent = 'Delete';
+  deleteButton.id = `delete-button-${flower.id}`;
+  deleteButton.addEventListener('click', () => {
+    console.log("flower",flower.id);
+    deleteFlowerPost(flower.id);
+    
+  });
+  
+
+
+
+
+
+
   const cardContentDiv = document.createElement('div');
   cardContentDiv.classList.add('card-content');
   cardContentDiv.appendChild(name);
@@ -73,6 +89,7 @@ function createCard(flower) {
   cardContentDiv.appendChild(buyButton);
   cardContentDiv.appendChild(likeButton);
   cardContentDiv.appendChild(likeCounter);
+  cardContentDiv.appendChild(deleteButton)
 
   card.appendChild(img);
   card.appendChild(cardContentDiv);
@@ -117,3 +134,29 @@ function createCard(flower) {
   });
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', search);
+
+
+function deleteFlowerPost(flowerId) {
+    return fetch(`http://localhost:3000/flowers/${flowerId}`, {
+      method: 'DELETE',
+      
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Flower post deleted successfully:', data);
+    })
+    .catch(error => {
+      console.error('Error deleting flower post:', error);
+    });
+  }
+  
+// const deleteButton =document.getElementById("delete-button");
+// deleteButton.textContent = 'Delete'
+// deleteButton.id =`delete-button-${flowerid}`;
+// deleteButton.addEventListener('submit', event => {
+//     event.preventDefault();
+  
+    
+  
+//     deleteFlowerid(flowerid);
+//   });
