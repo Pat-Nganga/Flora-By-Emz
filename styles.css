@@ -41,12 +41,11 @@ h1 {
   .nav-link a {
     text-decoration:double;
     color: #333;
-    padding-right: 200px;
+    padding-right: 20px;
    
   }
   
   .nav-link a:hover {
-    background-color: #333;
     font-weight:bolder;
     font-size:x-large;
     background-color:rgb(82, 89, 95);
@@ -70,15 +69,20 @@ h1 {
   
   
   #search-button {
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: #ffffff;
-    padding: 5px 10px;
+    padding: 10px;
     float: left;
-    width: 5%;
+    width: 10%;
     border-radius: 5px;
     border-color: lightpink;
     margin-bottom: 50px;
     
+  }
+
+  #search-button.hover {
+    background-color: blanchedalmond;
+
   }
 
 
@@ -136,3 +140,13 @@ h1 {
   padding-right: 20px;
   margin-inline: 5px;
 } 
+
+#flower-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: pink;
+
+}
+

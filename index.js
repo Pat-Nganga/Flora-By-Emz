@@ -10,7 +10,6 @@ fetch('http://localhost:3000/flowers')
   });
 
 
-
 function search(e) {
   e.preventDefault();
   const query = document.getElementById('search-bar').value;
@@ -76,12 +75,6 @@ function createCard(flower) {
     
   });
   
-
-
-
-
-
-
   const cardContentDiv = document.createElement('div');
   cardContentDiv.classList.add('card-content');
   cardContentDiv.appendChild(name);
