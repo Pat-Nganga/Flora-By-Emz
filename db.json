@@ -2,7 +2,7 @@
     "flowers": [
       {
         "id": "1",       
-        "name":"Roses",
+        "name":"Assorted flowers",
         "price":"4000",
         "description": "Bunch of Flowers in a Metal Bucket",
         "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
