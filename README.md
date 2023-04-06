@@ -1,4 +1,4 @@
-# ** FLORA BY EMZ **
+# **FLORA BY EMZ**
 This project is a simple flower shop website that displays a list of bouquets of flowers and allows users to search for a specific bouquet, like a bouquet, buy a bouquet, delete a bouquet and edit a bouquet.
 
 ## Technologies Used

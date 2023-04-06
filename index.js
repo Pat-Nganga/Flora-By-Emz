@@ -64,6 +64,8 @@ function createCard(flower) {
   likeButton.addEventListener('click', () => {
     count++;
     likeButton.textContent = `Like (${count})`;
+
+    patchFlowerCount(flower,count);
   });
 
   //add a delete button
@@ -165,6 +167,45 @@ function updateFlowerPost(id, updates) {
       console.error('Error updating flower post:', error);
     });
   }
+  
+  const likeButton = document.createElement('button');
+  let count = 0;
+  likeButton.textContent = `Like (${count})`;
+  likeButton.id = `like-button-${flower.id}`;
+  const likeCounter = document.createElement('h2');
+  likeButton.addEventListener('click', () => {
+    count++;
+    likeButton.textContent = `Like (${count})`;
+
+    patchFlowerCount(flower,count);
+  });
+
+  function patchFlowerCount(flower, count) {
+    // Make a PATCH request to update the count on the server
+    fetch(`/flowers/${flower.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ count })
+    })
+    .then(response => response.json())
+    .then(updatedFlower => {
+      // Update the flower object with the updated count
+      flower.count = updatedFlower.count;
+    })
+    .catch(error => console.error(error));
+  }
+
+
+  
+
+
+
+
+
+
+
   
 //to delete flower post
 function deleteFlowerPost(flowerId) {
