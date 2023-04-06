@@ -74,6 +74,25 @@ function createCard(flower) {
     deleteFlowerPost(flower.id);
     
   });
+
+
+  // add an edit button
+const editButton = document.createElement('button');
+editButton.textContent = 'Edit';
+editButton.id = `edit-button-${flower.id}`;
+editButton.addEventListener('click', () => {
+  const newName = prompt('Enter new name:', flower.name);
+  const newPrice = prompt('Enter new price:', flower.price);
+  const newImage = prompt('Enter new image URL:', flower.image);
+  const updates = {
+    name: newName,
+    price: parseFloat(newPrice),
+    image: newImage
+  };
+  updateFlowerPost(flower.id, updates);
+
+});
+
   
   const cardContentDiv = document.createElement('div');
   cardContentDiv.classList.add('card-content');
@@ -82,7 +101,8 @@ function createCard(flower) {
   cardContentDiv.appendChild(buyButton);
   cardContentDiv.appendChild(likeButton);
   cardContentDiv.appendChild(likeCounter);
-  cardContentDiv.appendChild(deleteButton)
+  cardContentDiv.appendChild(deleteButton);
+  cardContentDiv.appendChild(editButton);
 
   card.appendChild(img);
   card.appendChild(cardContentDiv);
@@ -129,6 +149,38 @@ const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', search);
 
 
+function updateFlowerPost(id, updates) {
+    return fetch(`http://localhost:3000/flowers/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updates)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Flower post updated successfully:', data);
+    })
+    .catch(error => {
+      console.error('Error updating flower post:', error);
+    });
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function deleteFlowerPost(flowerId) {
     return fetch(`http://localhost:3000/flowers/${flowerId}`, {
       method: 'DELETE',
@@ -142,14 +194,4 @@ function deleteFlowerPost(flowerId) {
       console.error('Error deleting flower post:', error);
     });
   }
-  
-// const deleteButton =document.getElementById("delete-button");
-// deleteButton.textContent = 'Delete'
-// deleteButton.id =`delete-button-${flowerid}`;
-// deleteButton.addEventListener('submit', event => {
-//     event.preventDefault();
-  
-    
-  
-//     deleteFlowerid(flowerid);
-//   });
+
