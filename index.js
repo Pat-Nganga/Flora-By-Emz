@@ -1,7 +1,6 @@
 fetch('http://localhost:3000/flowers')
   .then(response => response.json())
   .then(flowers => {
-    // create a card for each bouquet and append to the container
     const flowersContainer = document.getElementById('flowers-container');
     flowers.forEach(flower => {
       const card = createCard(flower);
@@ -9,7 +8,7 @@ fetch('http://localhost:3000/flowers')
     });
   });
 
-
+//creating a search function
 function search(e) {
   e.preventDefault();
   const query = document.getElementById('search-bar').value;
@@ -31,6 +30,8 @@ function search(e) {
       }
     });
 }
+
+    // creating a card for each bouquet and append to the container
 
 function createCard(flower) {
   const card = document.createElement('div');
@@ -74,7 +75,6 @@ function createCard(flower) {
     deleteFlowerPost(flower.id);
     
   });
-
 
   // add an edit button
 const editButton = document.createElement('button');
@@ -166,21 +166,7 @@ function updateFlowerPost(id, updates) {
     });
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//to delete flower post
 function deleteFlowerPost(flowerId) {
     return fetch(`http://localhost:3000/flowers/${flowerId}`, {
       method: 'DELETE',

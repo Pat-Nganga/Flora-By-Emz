@@ -1,11 +1,10 @@
 {
   "flowers": [
     {
-      "id": "2",
       "name": "Red Roses",
-      "price": "2500",
-      "description": "Red Rose Flowers In Close-up View",
-      "image": "https://images.pexels.com/photos/3381533/pexels-photo-3381533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "price": 10000,
+      "image": "https://vilniusflowers.lt/wp-content/uploads/2019/09/100-red-roses-bouquet.jpg",
+      "id": "2"
     },
     {
       "id": "3",
@@ -47,22 +46,16 @@
       "comments": []
     },
     {
-      "id": "10",
       "name": "Orange tulips",
-      "price": "8000",
-      "description": "Orange flowers in Gray Plant Pot",
-      "image": "https://images.pexels.com/photos/931154/pexels-photo-931154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "likes": 0,
-      "comments": []
+      "price": 8000,
+      "image": "https://cdn.shopify.com/s/files/1/0781/4841/products/9769AF90-9546-4D18-BE6F-FE7C6BE511A9_1024x1024.jpg?v=1581428546",
+      "id": "10"
     },
     {
-      "id": "11",
-      "name": "Wild Flowers",
-      "price": "8500",
-      "description": "Wild flowers bouqets for weddings",
-      "image": "https://www.espoma.com/wp-content/uploads/2021/08/niklas-ohlrogge-74QmIJDTD-c-unsplash-705x529.jpg",
-      "likes": 0,
-      "comments": []
+      "name": "Hydrangea",
+      "price": 8500,
+      "image": "https://pearsonsflorist.com.au/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEI5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--062d653d81449b320e1ed117647ec76d51290855/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lKZDJWaWNBWTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVFLQUFta0NnQUk2REhGMVlXeHBkSGxwU3c9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d47d6315dbaa9d5faf2b2985ff6617da2df08809/Purple.png",
+      "id": "11"
     },
     {
       "id": "12",
@@ -80,10 +73,16 @@
       "id": "aCCV1bR"
     },
     {
-      "name": "assorted flowers",
+      "name": "Assorted Flowers",
       "price": 4000,
       "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "id": "MxZyYB-"
+    },
+    {
+      "name": "Driied bouquet",
+      "price": 4300,
+      "image": "https://www.stemsbrooklyn.com/wp-content/uploads/2019/11/MG_9187-scaled.jpg",
+      "id": "R5vaOLD"
     }
   ]
 }
