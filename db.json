@@ -7,16 +7,7 @@
       "description": "Yellow Sunflowers In Clear Glass Vase",
       "image": "https://images.pexels.com/photos/1427855/pexels-photo-1427855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "like": 1,
-      "likes": 13
-    },
-    {
-      "id": "6",
-      "name": "Baby Breath",
-      "price": "1500",
-      "description": "Baby breath to spice up your bouquets",
-      "image": "https://www.wholesaleweddingsuperstore.com.au/assets/alt_2/C20067.jpg?20210318031430",
-      "like": 0,
-      "likes": 7
+      "likes": 16
     },
     {
       "id": "7",
@@ -25,7 +16,7 @@
       "description": "Bunch of yellow flowers in sunlight",
       "image": "https://images.pexels.com/photos/5987200/pexels-photo-5987200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "like": 0,
-      "likes": 2
+      "likes": 7
     },
     {
       "id": "8",
@@ -33,7 +24,8 @@
       "price": "6500",
       "description": "Elegant bouquet of floribunda flowers on floor",
       "image": "https://images.pexels.com/photos/2879824/pexels-photo-2879824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "like": 0
+      "like": 0,
+      "likes": 1
     },
     {
       "id": "13",
@@ -41,7 +33,8 @@
       "price": "9000",
       "description": "Fresh Lupinus polyphyllus bouquet in vase",
       "image": "https://images.pexels.com/photos/4702141/pexels-photo-4702141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "like": 0
+      "like": 0,
+      "likes": 2
     },
     {
       "name": "Orange tulips",
