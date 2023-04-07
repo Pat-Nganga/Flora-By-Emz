@@ -51,28 +51,58 @@ function createCard(flower) {
   const buyButton = document.createElement('button');
   buyButton.textContent = 'Buy Bouquet';
   buyButton.id = `buy-button-${flower.id}`;
-  buyButton.addEventListener('click', () => {
+  buyButton.addEventListener('click', (e) => {
+    e.preventDefault(e);
+  count++;
     card.style.display = 'none';
+
+
   });
 
-  // add a like button
-  const likeButton = document.createElement('button');
-  let count = 0;
+ 
+// add a like button
+const likeButton = document.createElement('button');
+let count = flower.likes || 0;
+likeButton.textContent = `Like (${count})`;
+likeButton.id = `like-button-${flower.id}`;
+const likeCounter = document.createElement('h2');
+likeButton.addEventListener('click', (e) => {
+    e.preventDefault();
+  count++;
   likeButton.textContent = `Like (${count})`;
-  likeButton.id = `like-button-${flower.id}`;
-  const likeCounter = document.createElement('h2');
-  likeButton.addEventListener('click', () => {
-    count++;
-    likeButton.textContent = `Like (${count})`;
+  updateLikes(flower.id, count);
+});
 
-    patchFlowerCount(flower,count);
+// update the flower post with the new count of likes
+function updateLikes(id, count) {
+  return fetch(`http://localhost:3000/flowers/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ likes: count })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Likes updated successfully:', data);
+  })
+  .catch(error => {
+    console.error('Error updating likes:', error);
   });
+}
+
+
+    
+
+  
 
   //add a delete button
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
   deleteButton.id = `delete-button-${flower.id}`;
-  deleteButton.addEventListener('click', () => {
+  deleteButton.addEventListener('click', (e) => {
+    e.preventDefault();
+  count++;
     console.log("flower",flower.id);
     deleteFlowerPost(flower.id);
     
@@ -82,7 +112,9 @@ function createCard(flower) {
 const editButton = document.createElement('button');
 editButton.textContent = 'Edit';
 editButton.id = `edit-button-${flower.id}`;
-editButton.addEventListener('click', () => {
+editButton.addEventListener('click', (e) => {
+    e.preventDefault();
+  count++;
   const newName = prompt('Enter new name:', flower.name);
   const newPrice = prompt('Enter new price:', flower.price);
   const newImage = prompt('Enter new image URL:', flower.image);
@@ -166,47 +198,7 @@ function updateFlowerPost(id, updates) {
     .catch(error => {
       console.error('Error updating flower post:', error);
     });
-  }
-  
-  const likeButton = document.createElement('button');
-  let count = 0;
-  likeButton.textContent = `Like (${count})`;
-  likeButton.id = `like-button-${flower.id}`;
-  const likeCounter = document.createElement('h2');
-  likeButton.addEventListener('click', () => {
-    count++;
-    likeButton.textContent = `Like (${count})`;
-
-    patchFlowerCount(flower,count);
-  });
-
-  function patchFlowerCount(flower, count) {
-    // Make a PATCH request to update the count on the server
-    fetch(`/flowers/${flower.id}`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ count })
-    })
-    .then(response => response.json())
-    .then(updatedFlower => {
-      // Update the flower object with the updated count
-      flower.count = updatedFlower.count;
-    })
-    .catch(error => console.error(error));
-  }
-
-
-  
-
-
-
-
-
-
-
-  
+  }  
 //to delete flower post
 function deleteFlowerPost(flowerId) {
     return fetch(`http://localhost:3000/flowers/${flowerId}`, {

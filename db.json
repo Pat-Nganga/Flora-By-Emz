@@ -1,18 +1,13 @@
 {
   "flowers": [
     {
-      "name": "Red Roses",
-      "price": 10000,
-      "image": "https://vilniusflowers.lt/wp-content/uploads/2019/09/100-red-roses-bouquet.jpg",
-      "id": "2"
-    },
-    {
       "id": "3",
       "name": "Sunflowers",
       "price": "3500",
       "description": "Yellow Sunflowers In Clear Glass Vase",
       "image": "https://images.pexels.com/photos/1427855/pexels-photo-1427855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "like": 0
+      "like": 1,
+      "likes": 13
     },
     {
       "id": "6",
@@ -20,7 +15,8 @@
       "price": "1500",
       "description": "Baby breath to spice up your bouquets",
       "image": "https://www.wholesaleweddingsuperstore.com.au/assets/alt_2/C20067.jpg?20210318031430",
-      "like": 0
+      "like": 0,
+      "likes": 7
     },
     {
       "id": "7",
@@ -28,7 +24,8 @@
       "price": "2500",
       "description": "Bunch of yellow flowers in sunlight",
       "image": "https://images.pexels.com/photos/5987200/pexels-photo-5987200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "like": 0
+      "like": 0,
+      "likes": 2
     },
     {
       "id": "8",
@@ -56,7 +53,8 @@
       "name": "Hydrangea",
       "price": 8500,
       "image": "https://pearsonsflorist.com.au/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEI5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--062d653d81449b320e1ed117647ec76d51290855/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lKZDJWaWNBWTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVFLQUFta0NnQUk2REhGMVlXeHBkSGxwU3c9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--d47d6315dbaa9d5faf2b2985ff6617da2df08809/Purple.png",
-      "id": "11"
+      "id": "11",
+      "likes": 1
     },
     {
       "id": "12",
@@ -64,8 +62,7 @@
       "price": "10000",
       "description": "luxury flowers ",
       "image": "https://images.pexels.com/photos/6913841/pexels-photo-6913841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "likes": 0,
-      "comments": []
+      "likes": 0
     },
     {
       "name": "lillies",
@@ -74,16 +71,23 @@
       "id": "aCCV1bR"
     },
     {
-      "name": "Assorted Flowers",
-      "price": 4000,
-      "image": "https://images.pexels.com/photos/4612235/pexels-photo-4612235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": "MxZyYB-"
+      "name": "roses",
+      "price": 5000,
+      "image": "https://www.stemsbrooklyn.com/wp-content/uploads/2019/11/MG_9187-scaled.jpg",
+      "id": "Up92GSO"
     },
     {
-      "name": "Driied bouquet",
+      "name": "roses",
+      "price": 10000,
+      "image": "https://expressflorists.co.ke/wp-content/uploads/2021/03/images.jpeg",
+      "id": "fMybyI8",
+      "likes": 2
+    },
+    {
+      "name": "Multipetaled flowers",
       "price": 4000,
-      "image": "https://www.stemsbrooklyn.com/wp-content/uploads/2019/11/MG_9187-scaled.jpg",
-      "id": "EiIMqpQ"
+      "image": "https://images.pexels.com/photos/74512/pexels-photo-74512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": "Ez4PLSq"
     }
   ]
 }
