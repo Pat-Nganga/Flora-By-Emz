@@ -58,9 +58,9 @@
       "likes": 1
     },
     {
-      "name": "lillies",
-      "price": 5000,
-      "image": "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRD4Sn-NyrhPeZlsTsShOXSn_ogZLPDDY2_ZFTflFFvrde05ykVND1e-Zupc2qJN04QgLvM9RLyz_BAr6M",
+      "name": null,
+      "price": null,
+      "image": null,
       "id": "aCCV1bR"
     },
     {
