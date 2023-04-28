@@ -72,33 +72,27 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 5px;
-  background-color: white;
+  grid-template-columns:(minmax(200px, 2fr));
+  margin: 20px 100px 20px 100px;
 }
 
 #flowers-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .card {
-
-  
   border-radius: 10px;
-}
-.card {
-    border: 1px solid #cccccc;
-    padding: 10px;
-    margin: 10px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin: 15px 15px 10px 15px;
+  min-width: 450px;
   }
   
 
 .card img {
   width: 450px;
   height: 500px;
-  
   
 }
 
@@ -113,16 +107,16 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
- .card-content button {
-  padding: 10px 30px;
+ .btn{
+  padding: 10px;
   border-radius: 5px;
-  font-size: larger;
   background-color: rgb(82, 89, 95);
   color: whitesmoke;
   border: 0;
-  margin-top: 20px;
-  padding-right: 20px;
-  margin-inline: 5px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  min-width: 75px;
+  font-size: small;
 } 
 
 #flower-form {
@@ -155,7 +149,7 @@ body {
     padding-left: 12px;
   }
   
-  input {
+ input {
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -180,9 +174,16 @@ body {
   }
   
   button:active {
-    background-color: plum;
+    background-color: plum !important;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  .btn-container{
+    display: flex;
+    flex-direction:left;
+    align-items: center;
+    justify-content: center;
   }
   
 
