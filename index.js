@@ -48,22 +48,16 @@ function createCard(flower) {
     price.textContent = `KES ${flower.price}`;
 
     // add a buy button
-    const buyButton = document.createElement('button');
-    buyButton.textContent = 'Buy Bouquet';
-    buyButton.id = `buy-button-${flower.id}`;
+    const flowerId = flower.id
+    const buyButton = cardButtons('Buy', flowerId, 'buy btn')
     buyButton.addEventListener('click', (e) => {
         e.preventDefault(e);
         count++;
         card.style.display = 'none';
-
-
     });
     // add a like button
-    const likeButton = document.createElement('button');
     let count = flower.likes || 0;
-    likeButton.textContent = `Like (${count})`;
-    likeButton.id = `like-button-${flower.id}`;
-    const likeCounter = document.createElement('h2');
+    const likeButton = cardButtons(`Like (${count})`, flowerId, 'like btn')
     likeButton.addEventListener('click', (e) => {
         e.preventDefault();
         count++;
@@ -90,9 +84,7 @@ function createCard(flower) {
     }
 
     //add a delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
-    deleteButton.id = `delete-button-${flower.id}`;
+    const deleteButton = cardButtons('Delete', flowerId, 'delete btn')
     deleteButton.addEventListener('click', (e) => {
         e.preventDefault();
         count++;
@@ -102,9 +94,7 @@ function createCard(flower) {
     });
 
     // add an edit button
-    const editButton = document.createElement('button');
-    editButton.textContent = 'Edit';
-    editButton.id = `edit-button-${flower.id}`;
+    const editButton = cardButtons('Edit', flowerId, 'edit btn')
     editButton.addEventListener('click', (e) => {
         e.preventDefault();
         count++;
@@ -120,20 +110,32 @@ function createCard(flower) {
 
     });
 
+    const btnDivContainer = document.createElement('div');
+    btnDivContainer.classList.add("btn-container");
+    btnDivContainer.appendChild(buyButton);
+    btnDivContainer.appendChild(likeButton);
+    btnDivContainer.appendChild(deleteButton);
+    btnDivContainer.appendChild(editButton);
+
     const cardContentDiv = document.createElement('div');
     cardContentDiv.classList.add('card-content');
     cardContentDiv.appendChild(name);
     cardContentDiv.appendChild(price);
-    cardContentDiv.appendChild(buyButton);
-    cardContentDiv.appendChild(likeButton);
-    cardContentDiv.appendChild(likeCounter);
-    cardContentDiv.appendChild(deleteButton);
-    cardContentDiv.appendChild(editButton);
+
 
     card.appendChild(img);
     card.appendChild(cardContentDiv);
+    card.appendChild(btnDivContainer);
 
     return card;
+}
+
+function cardButtons(buttonName, flowerId, class_name){
+    const button = document.createElement('button');
+    button.textContent = buttonName;
+    button.id = `${buttonName}-${flowerId}`;
+    button.className = class_name;
+    return button;
 }
 
 function createNewFlowerPost(flowerPost) {
@@ -171,9 +173,6 @@ form.addEventListener('submit', event => {
 
     createNewFlowerPost(flowerPost);
 });
-const searchButton = document.getElementById('search-button');
-searchButton.addEventListener('click', search);
-
 
 function updateFlowerPost(id, updates) {
     return fetch(`http://localhost:3000/flowers/${id}`, {
